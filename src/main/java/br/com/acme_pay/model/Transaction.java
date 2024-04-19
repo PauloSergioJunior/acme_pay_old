@@ -14,7 +14,7 @@ public class Transaction {
     private Account destinationAccount;
     private Account originAccount;
     private LocalDate transactionDate;
-    private Integer accontId;
+    private Integer accountId;
 
 
 }
