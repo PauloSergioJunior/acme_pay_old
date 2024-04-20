@@ -10,18 +10,24 @@ public class Main {
     public static void main(String[] args) {
 
         TransactionController controller = new TransactionController();
-        Transaction transaction = new Transaction();
+
         Account account = new Account();
-        account.setBalance(BigDecimal.ZERO);
+        account.setBalance(new BigDecimal(1200));
+        //account.setBalance(BigDecimal.ZERO);
         account.setAgencyNumber(1234);
+
+        Account accountDestination = new Account();
+        accountDestination.setBalance(BigDecimal.ZERO);
+        accountDestination.setAgencyNumber(1235);
+
+        Transaction transaction = new Transaction();
         transaction.setOriginAccount(account);
         transaction.setTransactionValue(BigDecimal.valueOf(1000));
         transaction.setOriginAccount(account);
-        Account accountDestination = new Account();
-        accountDestination.setAgencyNumber(1235);
+
         transaction.setDestinationAccount(accountDestination);
 
-        System.out.println(controller.makeTransaction(transaction));
+        System.out.println(controller.makeTransaction(transaction).toString());
 
     }
 }

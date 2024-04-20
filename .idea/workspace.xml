@@ -7,7 +7,8 @@
     <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/TransactionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +90,7 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="transactionService.checkBalance(transaction);" />
+        <watch expression="transactionValue.add(calculateRate(transaction)" />
       </configuration>
     </watches-manager>
   </component>

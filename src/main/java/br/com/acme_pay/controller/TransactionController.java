@@ -1,5 +1,7 @@
 package br.com.acme_pay.controller;
 
+import br.com.acme_pay.enums.ClientBalanceStatus;
+import br.com.acme_pay.enums.TransferStatus;
 import br.com.acme_pay.model.Transaction;
 import br.com.acme_pay.service.TransactionService;
 
@@ -7,12 +9,19 @@ public class TransactionController {
 
     //private TransactionService transactionService;
 
-    public String makeTransaction(Transaction transaction){
+    public Enum<?> makeTransaction(Transaction transaction){
         TransactionService transactionService = new TransactionService();
+        Enum<ClientBalanceStatus> clientBalanceStatusEnum = transactionService.checkBalance(transaction);
 
-        System.out.println(transactionService.calculateRate(transaction).doubleValue());
+        if (clientBalanceStatusEnum != ClientBalanceStatus.WITH_BALANCE) {
+            return clientBalanceStatusEnum;
+        }
 
-        return transactionService.checkBalance(transaction).toString();
+        System.out.println(transaction.toString());
+        transactionService.calculateTransfer(transaction);
+        System.out.println(transaction.toString());
+
+        return TransferStatus.APPROVED;
 
     }
 
