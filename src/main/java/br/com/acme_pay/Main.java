@@ -2,10 +2,10 @@ package br.com.acme_pay;
 
 import br.com.acme_pay.controller.CustomerController;
 import br.com.acme_pay.controller.TransactionController;
-import br.com.acme_pay.enums.ClientType;
-import br.com.acme_pay.model.Account;
-import br.com.acme_pay.model.Customer;
-import br.com.acme_pay.model.Transaction;
+import br.com.acme_pay.enums.AccountType;
+import br.com.acme_pay.domain.Account;
+import br.com.acme_pay.domain.Customer;
+import br.com.acme_pay.domain.Transaction;
 
 import java.math.BigDecimal;
 
@@ -26,7 +26,6 @@ public class Main {
                 .customerAccounts(null)
                 .customerPassword("123")
                 .customerPhone("12312312")
-                .clientType(ClientType.COMMON_CUSTOMER)
                 .build();
 
         System.out.println(controller.registerClient(customer));

@@ -1,6 +1,5 @@
-package br.com.acme_pay.model;
+package br.com.acme_pay.domain;
 
-import br.com.acme_pay.enums.ClientType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,6 +19,5 @@ public class Customer {
     private String customerEmail;
     private String customerPhone;
     private String customerPassword;
-    private Enum<ClientType> clientType;
 
 }

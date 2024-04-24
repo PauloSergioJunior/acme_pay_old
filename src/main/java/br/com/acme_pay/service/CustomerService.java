@@ -1,11 +1,10 @@
 package br.com.acme_pay.service;
 
-import br.com.acme_pay.enums.ClientType;
-import br.com.acme_pay.model.Customer;
+import br.com.acme_pay.enums.AccountType;
+import br.com.acme_pay.domain.Customer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class CustomerService {
 
@@ -20,7 +19,6 @@ public class CustomerService {
                         .customerAccounts(null)
                         .customerPassword("123")
                         .customerPhone("12312312")
-                        .clientType(ClientType.COMMON_CUSTOMER)
                         .build());
     }
 
@@ -35,7 +33,6 @@ public class CustomerService {
                                .customerAccounts(customer.getCustomerAccounts())
                                .customerPassword(customer.getCustomerPassword())
                                .customerPhone(customer.getCustomerPhone())
-                               .clientType(ClientType.COMMON_CUSTOMER)
                                .build();
            customers.add(cust);
 

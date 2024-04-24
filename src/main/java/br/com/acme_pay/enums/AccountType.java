@@ -1,6 +1,6 @@
 package br.com.acme_pay.enums;
 
-public enum ClientType {
+public enum AccountType {
 
     SHOPKEEPER,
     COMMON_CUSTOMER
