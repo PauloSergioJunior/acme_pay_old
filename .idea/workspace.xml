@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/ClientBalanceStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/CustomerBalanceStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/ClientType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/AccountType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -46,9 +41,11 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Maven.Acme_pay [clean,install,-DSkipTests=true].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "development",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/paulosgjr/Documents/dev/aula2/acme_pay",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -58,6 +55,7 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install -DSkipTests=true" />
+      <command value="mvn clean install -DskipTests=true" />
     </option>
   </component>
   <component name="RunManager">
