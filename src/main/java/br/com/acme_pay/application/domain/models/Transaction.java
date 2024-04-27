@@ -1,4 +1,4 @@
-package br.com.acme_pay.domain;
+package br.com.acme_pay.application.domain.models;
 
 import lombok.Data;
 

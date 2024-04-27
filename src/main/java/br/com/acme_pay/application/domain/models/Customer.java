@@ -1,6 +1,6 @@
-package br.com.acme_pay.domain;
+package br.com.acme_pay.application.domain.models;
 
-import br.com.acme_pay.exception.CustomerDeleteException;
+import br.com.acme_pay.application.domain.exception.CustomerDeleteException;
 import lombok.*;
 
 import java.util.ArrayList;

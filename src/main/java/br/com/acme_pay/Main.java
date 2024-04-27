@@ -2,10 +2,9 @@ package br.com.acme_pay;
 
 import br.com.acme_pay.controller.CustomerController;
 import br.com.acme_pay.controller.TransactionController;
-import br.com.acme_pay.enums.AccountType;
-import br.com.acme_pay.domain.Account;
-import br.com.acme_pay.domain.Customer;
-import br.com.acme_pay.domain.Transaction;
+import br.com.acme_pay.application.domain.models.Account;
+import br.com.acme_pay.application.domain.models.Customer;
+import br.com.acme_pay.application.domain.models.Transaction;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

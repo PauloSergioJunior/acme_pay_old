@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="fix method deposit and withdraw">
+    <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="implements custumer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/controller/TransactionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/application/domain/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/application/domain/models/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/application/domain/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/application/domain/models/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/AccountType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/CustomerBalanceStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/CustomerCreationStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/enums/TransferStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/exception/BalanceToWithdrawException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/application/domain/exception/BalanceToWithdrawException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/exception/CustomerDeleteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/application/domain/exception/CustomerDeleteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/TransactionService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Maven.Acme_pay [clean,install,-DSkipTests=true].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "class",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/paulosgjr/Documents/dev/aula2/acme_pay",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Acme_pay [clean,install,-DSkipTests=true].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;class&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/paulosgjr/Documents/dev/aula2/acme_pay&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.acme_pay.exception" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install -DSkipTests=true" />
@@ -109,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714225223197</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implements custumer">
+      <option name="closed" value="true" />
+      <created>1714244463544</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714244463544</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,19 +152,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Methods in Account" />
     <MESSAGE value="fix method deposit and withdraw" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix method deposit and withdraw" />
+    <MESSAGE value="implements custumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements custumer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/CustomerService.java</url>
-          <line>36</line>
+          <line>35</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/acme_pay/service/CustomerService.java</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

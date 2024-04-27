@@ -1,11 +1,10 @@
-package br.com.acme_pay.domain;
+package br.com.acme_pay.application.domain.models;
 
 import br.com.acme_pay.enums.AccountType;
-import br.com.acme_pay.exception.BalanceToWithdrawException;
+import br.com.acme_pay.application.domain.exception.BalanceToWithdrawException;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
