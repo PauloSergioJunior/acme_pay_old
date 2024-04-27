@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" afterDir="false" />
-    </list>
+    <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="Adding Methods in Account" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -43,7 +44,7 @@
     "Maven.Acme_pay [clean,install,-DSkipTests=true].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "development",
+    "git-widget-placeholder": "class",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/paulosgjr/Documents/dev/aula2/acme_pay",
     "project.structure.last.edited": "Modules",
@@ -87,6 +88,15 @@
       <option name="presentableId" value="Default" />
       <updated>1713314002402</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding Methods in Account">
+      <option name="closed" value="true" />
+      <created>1714224609141</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714224609141</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +109,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Methods in Account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Methods in Account" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

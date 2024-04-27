@@ -15,13 +15,13 @@ public class Account {
     private Enum<AccountType> accountType;
 
     public void deposit(BigDecimal amount){
-        this.balance.add(amount);
+        this.balance = this.balance.add(amount);
     }
 
     public void withdraw(BigDecimal amount) throws BalanceToWithdrawException{
 
         checkBalance(amount);
-        this.balance.subtract(amount);
+        this.balance = this.balance.subtract(amount);
 
     }
 
