@@ -8,12 +8,27 @@ import br.com.acme_pay.domain.Customer;
 import br.com.acme_pay.domain.Transaction;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 
         //transaction();
-        customer();
+        //customer();
+
+        Customer c = new Customer();
+        Customer c2 = new Customer();
+        c2.setCustomerAccounts(new ArrayList<>());
+        c2.setCustomerName("Paulo");
+        c2.setCustomerDocument("12345678910");
+        c2.setCustomerPassword("123");
+        c2.setCustomerEmail("email@email");
+        c2.setCustomerPhone("888888888");
+        c2.setCustomers(new ArrayList<>());
+
+        System.out.println(c.created(c2).toString());
+        System.out.println(c.created(c2).toString());
+        System.out.println(c.listCustomer());
 
     }
 

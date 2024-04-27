@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="Adding Methods in Account" />
+    <list default="true" id="98004574-373c-4b67-b05d-fc2b2c538e38" name="Changes" comment="fix method deposit and withdraw">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/acme_pay/domain/Customer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714224609141</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix method deposit and withdraw">
+      <option name="closed" value="true" />
+      <created>1714225223197</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714225223197</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,7 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Methods in Account" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Methods in Account" />
+    <MESSAGE value="fix method deposit and withdraw" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix method deposit and withdraw" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
